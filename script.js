@@ -72,7 +72,19 @@ Use:
 data.content   // the quote text
 data.author    // the author
 */
+const loadQuoteButton = document.getElementById("t3-loadQuote");
+const quote = document.getElementById("t3-quote");
+const author = document.getElementById("t3-author");
 
+loadQuoteButton.addEventListener("click", () => {
+  fetch("https://dummyjson.com/quotes/random")
+    .then((data) => data.json())
+    .then((data) => {
+      console.log(data);
+      quote.textContent = data.quote;
+      author.textContent = data.author;
+    });
+});
 /*  
 =======================================
 TODO4: Dammam Weather Now
