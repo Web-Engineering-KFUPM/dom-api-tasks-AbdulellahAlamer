@@ -19,8 +19,8 @@ inside the <p> element with id="t1-msg".
 💡 Hint:
 document.getElementById("t1-msg").innerHTML = "Hello, World!";
 */
- 
-
+// get the element by id and then we change it
+document.getElementById("t1-msg").innerHTML = "Hello, World!";
 /*  
 =======================================
 TODO2: Interaction Corner
@@ -40,7 +40,6 @@ button.addEventListener("click", function () {
     // change text here
 });
 */
- 
 
 /*  
 =======================================
@@ -68,7 +67,6 @@ Use:
 data.content   // the quote text
 data.author    // the author
 */
- 
 
 /*  
 =======================================
